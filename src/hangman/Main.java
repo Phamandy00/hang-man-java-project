@@ -4,6 +4,9 @@ public class Main
 {
     public static void main(String[] args)
     {
-        System.out.println("Hello world");
+        String[] arrWords = {"candy", "mountain", "envelope"};
+        RandomWordGenerator words = new RandomWordGenerator(arrWords);
+        String randomWord = words.generate();
+        System.out.println(randomWord);
     }
 }
